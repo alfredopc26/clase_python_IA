@@ -11,3 +11,12 @@ numA = input('Para la suma de A + B. Digite el numero A: \n')
 numB = input('Para la suma de A + B. Digite el numero B: \n')
 
 print("El resultado es: " + str(int(numA) + int(numB)))
+
+
+# Numero elevado al cuadrado
+
+print('Vamor a elevar un numero al cuadrado.')
+num = float(input('Digite el numero que desea elevar al cuadrado:'))
+pow_num = pow(num, 2)
+
+print(f'Su numero elevado al cuadrado es : {pow_num}')
