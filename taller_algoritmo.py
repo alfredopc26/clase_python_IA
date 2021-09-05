@@ -241,3 +241,28 @@ dias = int(input("Digite la cantidad de dias: \n"))
 print(f"Se van a quedar {dias} dias.")
 print(f"El monto total a pagar es de ${pagar_habitacion(dias)}")
 
+# Ejercicio 15
+
+
+def monto_cuoas(monto_prest):
+    mitad_prest = monto_prest * 0.5
+    cuotas_esp = mitad_prest / 4
+    intereses = monto_prest * 24 / 100
+    cuotas_ord = mitad_prest / 20
+    monto_total = monto_prest + intereses
+    dic_result = {
+        'monto_total': monto_total,
+        'cuotas_esp': cuotas_esp,
+        'cuotas_ord': cuotas_ord
+        }
+    return dic_result
+
+
+print("Se va a calcular el monto de cuotas a pagar")
+prestamo = int(input("Digite la cantidad del prestamo: \n"))
+det_prest = monto_cuoas(prestamo)
+print(f"Se prestaron ${prestamo}.")
+print(f"El monto total a pagar es de ${det_prest['monto_total']}")
+print(f"la cuota especial es de ${det_prest['cuotas_esp']} por 4 meses")
+print(f"la cuota ordinaria es de ${det_prest['cuotas_ord']} por 20 meses")
+
