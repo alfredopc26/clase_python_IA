@@ -123,3 +123,18 @@ def calcularBonificacion(cantAnios):
 print("Se va a calcular el monto a pagar por bonificaciones")
 anios = int(input("Digite cantidad de años en la empresa: \n"))
 print(f"El monto de bono a pagar es $ {calcularBonificacion(anios)}")
+
+
+# Ejercicio 8
+
+def calcularDescuentoProf(cantHoras):
+    
+    salario = 20000 * cantHoras
+    descuentos = (salario * 5) / 100
+    
+    return salario - descuentos
+
+
+print("Se va a calcular el monto a pagar al profesor")
+horas = int(input("Digite cantidad de horas: \n"))
+print(f"El monto a pagar es $ {calcularDescuentoProf(horas)}")
