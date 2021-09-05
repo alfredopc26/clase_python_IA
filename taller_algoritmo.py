@@ -90,3 +90,22 @@ print("Se va a calcular el salario final aplicando descuentos")
 salario = float(input("Digite su salario: \n"))
 salarioFinal = salario - calcularDescuento(salario)
 print(f"El salario final es : $ {salarioFinal}")
+
+
+# Ejercicio 6
+
+def calcularCostoAviso(cantPalabras, cantCm, cantColores):
+    
+    costPalabras = cantPalabras * 20000
+    costCm = cantCm * 15000
+    costColor = cantColores * 25000
+    
+    return (costPalabras + costCm + costColor)
+
+
+print("Se va a calcular el monto a paar por un aviso clasificado")
+palabras = int(input("Digite cantidad de palabras: \n"))
+centimetros = int(input("Digite cantidad de centimetros: \n"))
+colores = int(input("Digite cantidad de colores: \n"))
+print("El costo del aviso es : ")
+print(f"$ {calcularCostoAviso(palabras, centimetros, colores)}")
