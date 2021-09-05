@@ -72,3 +72,21 @@ def calcularSaldoFinal(saldoInicial):
 print("Se va a calcular el saldo final con intereses de % 1.5")
 saldoInicial = float(input("Digite su dinero a ahorrar: \n"))
 print(f"El saldo final es : $ {calcularSaldoFinal(saldoInicial)}")
+
+
+# Ejercicio 5
+
+def calcularDescuento(salario):
+    
+    leyPolPub = (salario * 1) / 100
+    segSocial = (salario * 4) / 100
+    segForzoso = (salario * 0.5) / 100
+    cajaAhorro = (salario * 5) / 100
+    
+    return (leyPolPub + segSocial + segForzoso + cajaAhorro)
+
+
+print("Se va a calcular el salario final aplicando descuentos")
+salario = float(input("Digite su salario: \n"))
+salarioFinal = salario - calcularDescuento(salario)
+print(f"El salario final es : $ {salarioFinal}")
