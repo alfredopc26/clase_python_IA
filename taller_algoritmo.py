@@ -109,3 +109,17 @@ centimetros = int(input("Digite cantidad de centimetros: \n"))
 colores = int(input("Digite cantidad de colores: \n"))
 print("El costo del aviso es : ")
 print(f"$ {calcularCostoAviso(palabras, centimetros, colores)}")
+
+
+# Ejercicio 7
+
+def calcularBonificacion(cantAnios):
+    
+    bonificacion = (cantAnios * 120000) - 20000
+    
+    return bonificacion
+
+
+print("Se va a calcular el monto a pagar por bonificaciones")
+anios = int(input("Digite cantidad de años en la empresa: \n"))
+print(f"El monto de bono a pagar es $ {calcularBonificacion(anios)}")
