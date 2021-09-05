@@ -205,3 +205,21 @@ num_dias = int(input("Digite la cantidad de dias a alquilar: \n"))
 print(f"El cliente alquilo {peliculas} peliculas.")
 print(f"El cliente demoro {num_dias} dias")
 print(f"El monto total a pagar es de ${monto_alquiler(peliculas, num_dias)}")
+
+# Ejercicio 13
+
+
+def familia_tour(cant_personas, cant_dias):
+    costo_personas = (cant_personas * 25000) * cant_dias
+    costo_iva = costo_personas * 12 / 100
+    costo_total = costo_personas + costo_iva
+    return costo_total
+
+
+print("Se va a calcular el monto a pagar por tour")
+personas = int(input("Digite la cantidad de personas: \n"))
+dias = int(input("Digite la cantidad de dias: \n"))
+print(f"la familia tiene {personas} miembros.")
+print(f"Se van a quedar {dias} dias.")
+print(f"El monto total a pagar es de ${familia_tour(personas, dias)}")
+
