@@ -32,6 +32,6 @@ product = float(input('Digite el valor del producto: \n'))
 discont = product * 0.20
 total_prod = product - discont
 
-print(f'EL valor inicial del producto es: {product}')
-print(f'EL valor con descuento del producto es: {total_prod}')
-print(f'EL valor ahorrado cpn el descuento es: {discont}')
+print(f'EL valor inicial del producto es: ${product}')
+print(f'EL valor con descuento del producto es: ${total_prod}')
+print(f'EL valor ahorrado cpn el descuento es: ${discont}')
