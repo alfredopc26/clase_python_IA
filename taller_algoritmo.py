@@ -152,4 +152,17 @@ monto = int(input("Digite monto consumido: \n"))
 print(f"El costo de la llamada es $ {calcuarCostoLlamada(monto)}")
 
 
+# Ejercicio 10
 
+def calcularRevelado(cantFotos):
+    
+    revelado = cantFotos * 1500
+    iva = revelado * 0.16
+    
+    
+    return revelado + iva
+
+
+print("Se va a calcular el costo total del revelado")
+fotos = int(input("Digite cantidad de fotos: \n"))
+print(f"El costo del revelado es $ {calcularRevelado(fotos)}")
