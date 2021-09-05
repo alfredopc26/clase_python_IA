@@ -223,3 +223,21 @@ print(f"la familia tiene {personas} miembros.")
 print(f"Se van a quedar {dias} dias.")
 print(f"El monto total a pagar es de ${familia_tour(personas, dias)}")
 
+# Ejercicio 14
+
+
+def pagar_habitacion(dias):
+    monto = 0
+    for i in range(1, dias + 1):
+        if(i == 1):
+            monto = monto + 100000
+        else:
+            monto = monto + 200000
+    return monto
+
+
+print("Se va a calcular el monto a pagar por habitacion")
+dias = int(input("Digite la cantidad de dias: \n"))
+print(f"Se van a quedar {dias} dias.")
+print(f"El monto total a pagar es de ${pagar_habitacion(dias)}")
+
