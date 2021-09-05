@@ -166,3 +166,24 @@ def calcularRevelado(cantFotos):
 print("Se va a calcular el costo total del revelado")
 fotos = int(input("Digite cantidad de fotos: \n"))
 print(f"El costo del revelado es $ {calcularRevelado(fotos)}")
+
+
+# Ejercicio 11
+
+def cantidad_dinero(area, dinero):
+    if(area == 'Ginecologia'):
+        monto = dinero * 0.4
+    elif(area == 'Traumatologia'):
+        monto = dinero * 0.3
+    elif(area == 'Pediatria'):
+        monto = dinero * 0.3
+    else:
+        return 0
+    return monto
+
+print("Se va a calcular el presupuesto por area")
+dinero = int(input("Digite la cantidad con que cuenta el hospital: \n"))
+print(f"El hospital cuenta con {dinero} pesos")
+print(f"Ginecologia obtendra: $ {cantidad_dinero('Ginecologia', dinero)}")
+print(f"Traumatologia obtendra {cantidad_dinero('Traumatologia', dinero)}")
+print(f"Pediatria obtendra {cantidad_dinero('Pediatria', dinero)}")
