@@ -138,3 +138,18 @@ def calcularDescuentoProf(cantHoras):
 print("Se va a calcular el monto a pagar al profesor")
 horas = int(input("Digite cantidad de horas: \n"))
 print(f"El monto a pagar es $ {calcularDescuentoProf(horas)}")
+
+
+# Ejercicio 9
+
+def calcuarCostoLlamada(montoConsum):
+    
+    return (montoConsum * 1.20)
+
+
+print("Se va a calcular el costo total de la llamada")
+monto = int(input("Digite monto consumido: \n"))
+print(f"El costo de la llamada es $ {calcuarCostoLlamada(monto)}")
+
+
+
