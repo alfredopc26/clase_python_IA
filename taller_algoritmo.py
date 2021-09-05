@@ -187,3 +187,21 @@ print(f"El hospital cuenta con {dinero} pesos")
 print(f"Ginecologia obtendra: $ {cantidad_dinero('Ginecologia', dinero)}")
 print(f"Traumatologia obtendra {cantidad_dinero('Traumatologia', dinero)}")
 print(f"Pediatria obtendra {cantidad_dinero('Pediatria', dinero)}")
+
+# Ejercicio 12
+
+def monto_alquiler(cant_peliculas, num_dias):
+    if(cant_peliculas > 1):
+        costo_peli = (cant_peliculas - 1) * 1500
+    else:
+        costo_peli = cant_peliculas * 1500
+    costo_total = costo_peli * num_dias
+    return costo_total
+
+
+print("Se va a calcular el monto a pagar por alquiler")
+peliculas = int(input("Digite la cantidad de peliculas a alquilar: \n"))
+num_dias = int(input("Digite la cantidad de dias a alquilar: \n"))
+print(f"El cliente alquilo {peliculas} peliculas.")
+print(f"El cliente demoro {num_dias} dias")
+print(f"El monto total a pagar es de ${monto_alquiler(peliculas, num_dias)}")
