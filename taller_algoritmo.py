@@ -59,3 +59,16 @@ print(f"% {calcularPorcentaje(dinTotal, persona2)}")
 print("El porcentaje de la Persona 3 es: ")
 print(f"% {calcularPorcentaje(dinTotal, persona3)}")
 
+
+# Ejercicio 4
+
+def calcularSaldoFinal(saldoInicial):
+    
+    interes = (saldoInicial * 1.5) / 100
+    saldoFinal = saldoInicial + interes
+    
+    return saldoFinal
+
+print("Se va a calcular el saldo final con intereses de % 1.5")
+saldoInicial = float(input("Digite su dinero a ahorrar: \n"))
+print(f"El saldo final es : $ {calcularSaldoFinal(saldoInicial)}")
